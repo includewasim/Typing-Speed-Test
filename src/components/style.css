@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: absolute;
+    top: 35px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+h1 strong{
+    color: #049c13;
+}
+h1{
+    color: darkred;
+}
+
+.App{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: #e7e9e9;
+}
+
+.container{
+    max-width:650px;
+    margin: 5px;
+    width: calc(100%-10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+}
+
+.test{
+    user-select: none;
+}
+
+input.input-field{
+    opacity: none;
+    z-index: -999;
+    position: absolute;
+}
+
+span{
+    font-size: 20px;
+    user-select: none;
+    cursor: text;
+}
+
+span.active{
+    border-bottom: 3px solid blue;
+}
+
+span.correct{
+    background-color: rgb(22,178,22);
+}
+span.wrong{
+    background-color: pink;
+    color: darkred;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 2px solid rgb(106,106,104);
+}
+
+.btn{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ced4da;
+    border-radius:4px;
+    cursor:pointer;
+    background: #049c13;
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+button.btn:hover{
+    background-color: #02500b;
+}
+
+footer{
+    position: absolute;
+    bottom: 35px;
+    color: gray;
+}
